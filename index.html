@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Focus &amp; Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CYBER_FOCUS // V1.0</h1>
+            <p class="subtitle">System status: <span class="pulse">ONLINE</span></p>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- Habit Tracker Section -->
+            <section class="panel">
+                <h2>// DAILY_HABITS</h2>
+                <form id="habit-form">
+                    <input type="text" id="habit-input" placeholder="Enter new protocol/habit..." required>
+                    <button type="submit" class="btn">ADD_HABIT</button>
+                </form>
+                <ul id="habit-list"></ul>
+            </section>
+
+            <!-- Focus Timer Section -->
+            <section class="panel">
+                <h2>// NEURAL_TIMER</h2>
+                <div class="timer-display" id="timer">25:00</div>
+                <div class="timer-controls">
+                    <button id="start-btn" class="btn">START</button>
+                    <button id="reset-btn" class="btn secondary">RESET</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
